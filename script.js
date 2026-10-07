@@ -4,7 +4,9 @@ filters.forEach((button) => button.addEventListener('click', () => {
   filters.forEach((item) => item.classList.remove('active'));
   button.classList.add('active');
   const category = button.dataset.filter;
-  cards.forEach((card) => { card.hidden = category !== 'all' && card.dataset.category !== category; });
+  cards.forEach((card) => {
+    card.hidden = category !== 'all' && card.dataset.category !== category;
+  });
 }));
 
 const toast = document.querySelector('.toast');
@@ -52,4 +54,34 @@ nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () =>
   nav.classList.remove('open');
   menuToggle.setAttribute('aria-expanded', 'false');
 }));
+
 document.querySelector('#year').textContent = new Date().getFullYear();
+
+const revealItems = document.querySelectorAll('[data-animate]');
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((entries, instance) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        instance.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealItems.forEach((item) => observer.observe(item));
+} else {
+  revealItems.forEach((item) => item.classList.add('in-view'));
+}
+
+const heroArt = document.querySelector('.hero-art');
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (heroArt && !reduceMotion && window.matchMedia('(pointer:fine)').matches) {
+  window.addEventListener('pointermove', (event) => {
+    const x = (event.clientX / window.innerWidth - 0.5) * 10;
+    const y = (event.clientY / window.innerHeight - 0.5) * 8;
+    heroArt.style.transform = `translate(${x}px, ${y}px)`;
+  }, { passive: true });
+}
+
+window.addEventListener('scroll', () => {
+  document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+}, { passive: true });

@@ -3,49 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#f8f5ef" />
+  <meta name="theme-color" content="#10110f" />
   <meta name="description" content="Home-cooked Kenyan flavour, made with care and delivered for your office, celebration or everyday table. Le Burn Kitchen caters for up to 180 guests." />
   <title>Le Burn Kitchen — Made with heart. Served with fire.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="announcement"><span class="spark">✳</span> GOOD FOOD, GOOD VIBES, REAL FLAVOUR <span class="announcement-right">Kenya <span class="dot"></span> Made fresh to order</span></div>
+  <div class="site-noise" aria-hidden="true"></div>
+  <div class="announcement"><span class="spark">✳</span> GOOD FOOD, GOOD VIBES, REAL FLAVOUR <span class="announcement-right">KENYA <span class="dot"></span> MADE FRESH TO ORDER</span></div>
   <header class="header" id="top">
     <a class="brand" href="#top" aria-label="Le Burn Kitchen home"><span class="brand-mark">LB<span>✳</span></span><span class="brand-name">Le Burn <em>Kitchen</em><small>BY LESLIE</small></span></a>
-    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
     <nav class="nav"><a href="#menu">The menu</a><a href="#story">Our kitchen</a><a href="#catering">Catering</a><a href="#love">Kind words</a></nav>
-    <a class="button button-dark header-cta" href="#catering">Plan your order <span>↗</span></a>
+    <a class="button button-outline header-cta" href="#catering">Plan your order <span>↗</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
   </header>
+
   <main>
-    <section class="hero">
+    <section class="hero" data-animate>
+      <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
       <div class="hero-copy">
         <div class="eyebrow"><span class="eyebrow-line"></span> A LITTLE KITCHEN WITH A LOT OF HEART</div>
-        <h1>Good food<br />brings us <span class="italic">together.</span></h1>
+        <h1 class="kinetic-title"><span>Good food</span><span>brings us <em>together.</em></span></h1>
         <p>From weekday office lunches to the big day you’ve been planning, we make feel-good food that turns a gathering into a moment.</p>
-        <div class="hero-actions"><a class="button button-red" href="#menu">Explore the menu <span>↗</span></a><a class="text-link" href="#story"><span class="play">▶</span> A taste of our story</a></div>
-      <div class="hero-proof"><div class="avatars"><span>L</span><span>♥</span><span>+</span></div><div><strong>Made with love, every time.</strong><small>Home-cooked. Freshly delivered.</small></div><div class="proof-divider"></div><div><strong>Up to 180</strong><small>orders per day</small></div></div>
+        <div class="hero-actions"><a class="button button-flame" href="#menu">Explore the menu <span>↗</span></a><a class="text-link" href="#story"><span class="play">▶</span> A taste of our story</a></div>
+        <div class="hero-proof"><div class="avatars"><span>L</span><span>♥</span><span>+</span></div><div><strong>Made with love, every time.</strong><small>Home-cooked. Freshly delivered.</small></div><div class="proof-divider"></div><div><strong>Up to 180</strong><small>orders per day</small></div></div>
       </div>
       <div class="hero-art">
         <div class="hero-photo" role="img" aria-label="Freshly prepared meal with colourful ingredients"></div>
+        <div class="photo-glow"></div>
         <div class="photo-label"><span class="label-spark">✳</span><span>Fresh from<br />Leslie’s kitchen</span></div>
         <div class="round-stamp"><span>MADE WITH HEART</span><b>✳</b><span>SERVED WITH FIRE</span></div>
         <div class="hero-caption"><span>01 / 03</span><i></i><span>A TABLE WORTH GATHERING FOR</span></div>
       </div>
       <div class="hero-side-note">COOKED WITH CARE&nbsp; · &nbsp;SHARED WITH JOY</div>
+      <div class="scroll-cue"><span></span> SCROLL TO TASTE</div>
     </section>
 
     <section class="ticker" aria-label="Our promise"><div>GOOD FOOD, GOOD VIBES <b>✳</b> OFFICE LUNCHES <b>✳</b> FAMILY FEASTS <b>✳</b> BIG-DAY CATERING <b>✳</b> REAL FLAVOUR, ALWAYS <b>✳</b> GOOD FOOD, GOOD VIBES <b>✳</b></div></section>
 
-    <section class="intro section-pad" id="story">
+    <section class="intro section-pad" id="story" data-animate>
       <div class="intro-kicker">A NOTE FROM LESLIE <span>—</span></div>
       <div class="intro-main"><h2>It starts in my kitchen.<br /><span>It ends around your table.</span></h2><p>Le Burn Kitchen began with a simple belief: the best meals don’t just fill you up, they make you feel at home. I cook every order with the same care I’d give my own people, then bring that little bit of home to your office, celebration or everyday table.</p><a class="text-link underlined" href="#catering">Meet your new favourite caterer <span>↗</span></a></div>
       <div class="intro-aside"><div class="hand-doodle">made<br />with <span>♥</span></div><span>Leslie, founder<br />& chief cook</span></div>
     </section>
 
-    <section class="menu-section section-pad" id="menu">
+    <section class="menu-section section-pad" id="menu" data-animate>
       <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> THE GOOD STUFF</div><h2>On the table <span>soon.</span></h2></div><div class="menu-heading-right"><p>A little something for the lunch break, the long weekend and everything worth celebrating.</p><span class="menu-note">MENU CHANGES WITH THE SEASON <b>✳</b></span></div></div>
       <div class="filters" role="group" aria-label="Filter menu items"><button class="filter active" data-filter="all">All the good stuff <span>06</span></button><button class="filter" data-filter="mains">Mains <span>03</span></button><button class="filter" data-filter="sides">Sides <span>02</span></button><button class="filter" data-filter="sweet">A little sweet <span>01</span></button></div>
       <div class="menu-grid">
@@ -59,17 +64,17 @@
       <div class="menu-footer"><span>Every menu can be made for your people.</span><a class="button button-outline" href="https://wa.me/254714889880?text=Hi%20Le%20Burn%20Kitchen!%20I%27d%20love%20to%20see%20your%20current%20menu." target="_blank" rel="noopener">Ask for this week’s menu <span>↗</span></a></div>
     </section>
 
-    <section class="catering" id="catering"><div class="catering-photo"></div><div class="catering-copy"><div class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> YOUR PEOPLE. YOUR MOMENT. OUR FOOD.</div><h2>Big table?<br /><span>We’re on it.</span></h2><p>Team lunch, client meeting, birthday, ruracio or a just-because get-together — we’ll help you feed your people well, without the last-minute panic.</p><div class="capacity"><span class="capacity-icon">✳</span><span><strong>Up to 180 orders</strong><small>Tell us what you’re planning. We’ll make a menu around it.</small></span></div><button class="button button-cream quote-open">Let’s plan your catering <span>↗</span></button><small class="response-note">A real person replies. Usually within one working day.</small></div><div class="catering-number">02 — MADE FOR YOUR MOMENTS</div></section>
+    <section class="catering" id="catering" data-animate><div class="catering-photo"></div><div class="catering-copy"><div class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> YOUR PEOPLE. YOUR MOMENT. OUR FOOD.</div><h2>Big table?<br /><span>We’re on it.</span></h2><p>Team lunch, client meeting, birthday, ruracio or a just-because get-together — we’ll help you feed your people well, without the last-minute panic.</p><div class="capacity"><span class="capacity-icon">✳</span><span><strong>Up to 180 orders</strong><small>Tell us what you’re planning. We’ll make a menu around it.</small></span></div><button class="button button-cream quote-open">Let’s plan your catering <span>↗</span></button><small class="response-note">A real person replies. Usually within one working day.</small></div><div class="catering-number">02 — MADE FOR YOUR MOMENTS</div></section>
 
-    <section class="steps section-pad"><div class="steps-intro"><div class="eyebrow"><span class="eyebrow-line"></span> EASY AS THAT</div><h2>Good food,<br /><span>no fuss.</span></h2><p>One message is all it takes to get things cooking.</p></div><div class="step"><span class="step-no">01</span><div class="step-icon">✉</div><h3>Tell us the plan</h3><p>What’s the occasion, when is it, and how many hungry people?</p></div><div class="step"><span class="step-no">02</span><div class="step-icon">✳</div><h3>We make it yours</h3><p>We’ll suggest a menu that fits your table, taste and budget.</p></div><div class="step"><span class="step-no">03</span><div class="step-icon">♥</div><h3>We bring the good</h3><p>Freshly cooked, carefully packed and delivered to your door.</p></div></section>
+    <section class="steps section-pad" data-animate><div class="steps-intro"><div class="eyebrow"><span class="eyebrow-line"></span> EASY AS THAT</div><h2>Good food,<br /><span>no fuss.</span></h2><p>One message is all it takes to get things cooking.</p></div><div class="step"><span class="step-no">01</span><div class="step-icon">✉</div><h3>Tell us the plan</h3><p>What’s the occasion, when is it, and how many hungry people?</p></div><div class="step"><span class="step-no">02</span><div class="step-icon">✳</div><h3>We make it yours</h3><p>We’ll suggest a menu that fits your table, taste and budget.</p></div><div class="step"><span class="step-no">03</span><div class="step-icon">♥</div><h3>We bring the good</h3><p>Freshly cooked, carefully packed and delivered to your door.</p></div></section>
 
-    <section class="testimonial section-pad" id="love"><span class="quote-mark">“</span><div class="quote-content"><div class="stars">✳ MADE WITH CARE ✳</div><blockquote>Good food is one of the simplest ways to make someone feel welcome. That’s the feeling I want every Le Burn order to bring to your table.</blockquote><div class="quote-credit"><span class="credit-avatar">L</span><span><strong>Leslie</strong><small>FOUNDER & CHIEF COOK</small></span></div></div><div class="quote-count"><strong>Good things<br />start at the table.</strong><span>PLANNING A GATHERING?<br />LET’S FEED YOUR PEOPLE.</span><a href="https://wa.me/254714889880?text=Hi%20Le%20Burn%20Kitchen!" target="_blank" rel="noopener">Tell us about it ↗</a></div></section>
+    <section class="testimonial section-pad" id="love" data-animate><span class="quote-mark">“</span><div class="quote-content"><div class="stars">✳ MADE WITH CARE ✳</div><blockquote>Good food is one of the simplest ways to make someone feel welcome. That’s the feeling I want every Le Burn order to bring to your table.</blockquote><div class="quote-credit"><span class="credit-avatar">L</span><span><strong>Leslie</strong><small>FOUNDER & CHIEF COOK</small></span></div></div><div class="quote-count"><strong>Good things<br />start at the table.</strong><span>PLANNING A GATHERING?<br />LET’S FEED YOUR PEOPLE.</span><a href="https://wa.me/254714889880?text=Hi%20Le%20Burn%20Kitchen!" target="_blank" rel="noopener">Tell us about it ↗</a></div></section>
 
-    <section class="closing"><span class="closing-spark">✳</span><div class="eyebrow eyebrow-light">LET’S GET SOMETHING GOOD GOING</div><h2>Your table is<br /><span>waiting.</span></h2><a class="button button-cream" href="https://wa.me/254714889880?text=Hi%20Le%20Burn%20Kitchen!%20I%27d%20love%20to%20place%20an%20order." target="_blank" rel="noopener">Say hello on WhatsApp <span>↗</span></a><span class="closing-note">GOOD FOOD. GOOD VIBES. REAL FLAVOUR.</span></section>
+    <section class="closing" data-animate><span class="closing-spark">✳</span><div class="eyebrow eyebrow-light">LET’S GET SOMETHING GOOD GOING</div><h2>Your table is<br /><span>waiting.</span></h2><a class="button button-cream" href="https://wa.me/254714889880?text=Hi%20Le%20Burn%20Kitchen!%20I%27d%20love%20to%20place%20an%20order." target="_blank" rel="noopener">Say hello on WhatsApp <span>↗</span></a><span class="closing-note">GOOD FOOD. GOOD VIBES. REAL FLAVOUR.</span></section>
   </main>
   <footer class="footer"><a class="brand footer-brand" href="#top"><span class="brand-mark">LB<span>✳</span></span><span class="brand-name">Le Burn <em>Kitchen</em><small>BY LESLIE</small></span></a><span class="footer-note">Made with heart in Kenya. <span>♥</span></span><div class="footer-links"><a href="https://wa.me/254714889880" target="_blank" rel="noopener">WhatsApp ↗</a><a href="https://www.youtube.com/@leslieangaya-254" target="_blank" rel="noopener">YouTube ↗</a><a href="tel:+254714889880">+254 714 889 880</a></div><div class="copyright">© <span id="year"></span> LE BURN KITCHEN · BY LESLIE</div></footer>
 
-  <dialog class="quote-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Close enquiry form">×</button><div class="eyebrow"><span class="eyebrow-line"></span> LET’S MAKE A PLAN</div><h2 id="dialog-title">Tell us about<br /><span>your table.</span></h2><p>We’ll open WhatsApp with your details ready to send to Leslie.</p><form id="quote-form"><label>Your name<input name="name" required placeholder="What should we call you?" /></label><label>What are we celebrating?<select name="occasion" required><option value="" disabled selected>Pick the occasion</option><option>Office lunch or meeting</option><option>Corporate event</option><option>Birthday or family gathering</option><option>Wedding or special celebration</option><option>Everyday meal order</option><option>Something else</option></select></label><div class="form-row"><label>Number of orders<input name="orders" type="number" min="1" max="180" placeholder="e.g. 30" required /></label><label>When?<input name="date" type="date" /></label></div><label>Anything else?<textarea name="notes" rows="3" placeholder="Dietary needs, location, or what you have in mind…"></textarea></label><button class="button button-red" type="submit">Continue on WhatsApp <span>↗</span></button></form></dialog>
+  <dialog class="quote-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Close enquiry form">×</button><div class="eyebrow"><span class="eyebrow-line"></span> LET’S MAKE A PLAN</div><h2 id="dialog-title">Tell us about<br /><span>your table.</span></h2><p>We’ll open WhatsApp with your details ready to send to Leslie.</p><form id="quote-form"><label>Your name<input name="name" required placeholder="What should we call you?" /></label><label>What are we celebrating?<select name="occasion" required><option value="" disabled selected>Pick the occasion</option><option>Office lunch or meeting</option><option>Corporate event</option><option>Birthday or family gathering</option><option>Wedding or special celebration</option><option>Everyday meal order</option><option>Something else</option></select></label><div class="form-row"><label>Number of orders<input name="orders" type="number" min="1" max="180" placeholder="e.g. 30" required /></label><label>When?<input name="date" type="date" /></label></div><label>Anything else?<textarea name="notes" rows="3" placeholder="Dietary needs, location, or what you have in mind…"></textarea></label><button class="button button-flame" type="submit">Continue on WhatsApp <span>↗</span></button></form></dialog>
   <div class="toast" role="status" aria-live="polite"></div>
   <script src="script.js"></script>
 </body>
